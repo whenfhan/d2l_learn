@@ -28,7 +28,8 @@ for X, y in data_iter(batch_size, features, labels):
     break
     
 # 初始化模型参数
-w = torch.normal(0, 0.01, size=(2,1), requires_grad=True)
+# w = torch.normal(0, 0.01, size=(2,1), requires_grad=True)
+w = torch.zeros((2,1), requires_grad=True)
 b = torch.zeros(1, requires_grad=True)
 
 
